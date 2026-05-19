@@ -1,65 +1,130 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="min-h-screen bg-black text-white overflow-hidden">
+      {/* HERO */}
+      <section className="relative flex flex-col items-center justify-center text-center px-6 py-32">
+        <div className="absolute inset-0 bg-gradient-to-b from-yellow-500/10 via-black to-black"></div>
+
+        <div className="relative z-10 max-w-4xl">
+          <h1 className="text-7xl md:text-9xl font-extrabold tracking-widest bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent">
+            BRX
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mt-6 text-xl md:text-2xl text-zinc-300 tracking-wide">
+            BORED RICH ECOSYSTEM
           </p>
+
+          <p className="mt-8 text-zinc-400 text-lg max-w-2xl mx-auto leading-relaxed">
+            We are not chasing hype.  
+            We are building an ecosystem.  
+            A new generation of creators, traders, builders and visionaries.
+          </p>
+
+          <div className="mt-12 flex gap-6 justify-center">
+            <button className="px-8 py-4 bg-yellow-500 text-black rounded-2xl font-bold hover:scale-105 transition">
+              JOIN COMMUNITY
+            </button>
+
+            <button className="px-8 py-4 border border-yellow-500 rounded-2xl hover:bg-yellow-500/10 transition">
+              WHITEPAPER
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* STORY */}
+      <section className="px-6 py-24 border-t border-yellow-500/10">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
+          <div>
+            <h2 className="text-4xl font-bold mb-6 text-yellow-400">
+              THE IDEA
+            </h2>
+
+            <p className="text-zinc-400 leading-relaxed text-lg">
+              BRX is more than a token.  
+              It is a symbol of freedom, self-development and financial evolution.
+            </p>
+
+            <p className="mt-6 text-zinc-500 leading-relaxed">
+              The ecosystem is built for people who think long term:
+              community builders,
+              traders,
+              creators,
+              market visionaries.
+            </p>
+          </div>
+
+          <div className="bg-zinc-900 border border-yellow-500/20 rounded-3xl p-10 shadow-2xl shadow-yellow-500/10">
+            <h3 className="text-3xl font-bold text-yellow-300 mb-6">
+              NO BORDERS
+            </h3>
+
+            <ul className="space-y-4 text-zinc-300">
+              <li>• Community Driven</li>
+              <li>• Future Ecosystem</li>
+              <li>• Long-Term Vision</li>
+              <li>• Crypto Culture</li>
+              <li>• Wealth Through Knowledge</li>
+            </ul>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* ROADMAP */}
+      <section className="px-6 py-24">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-bold text-center text-yellow-400 mb-20">
+            ROADMAP
+          </h2>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              {
+                year: "2026",
+                title: "Foundation",
+                text: "Community growth, farming, brand identity and ecosystem preparation.",
+              },
+              {
+                year: "2027",
+                title: "Expansion",
+                text: "Private community, partnerships and infrastructure building.",
+              },
+              {
+                year: "2028",
+                title: "Launch",
+                text: "BRX token release and ecosystem activation.",
+              },
+              {
+                year: "∞",
+                title: "Scale",
+                text: "Global ecosystem with no limits.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-zinc-900 border border-yellow-500/10 rounded-3xl p-8 hover:border-yellow-500/40 transition"
+              >
+                <p className="text-yellow-400 text-2xl font-bold">
+                  {item.year}
+                </p>
+
+                <h3 className="mt-4 text-2xl font-semibold">
+                  {item.title}
+                </h3>
+
+                <p className="mt-4 text-zinc-400 leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-yellow-500/10 py-12 text-center text-zinc-500">
+        <p>BRX © 2028 — Building The Future Together</p>
+      </footer>
+    </main>
   );
 }
