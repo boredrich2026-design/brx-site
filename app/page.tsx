@@ -156,9 +156,9 @@ export default function Home() {
       {/* ROADMAP */}
       <section className="relative px-6 py-32">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-6xl font-bold text-center mb-24 bg-gradient-to-r from-yellow-300 to-yellow-500 bg-clip-text text-transparent">
-            ECOSYSTEM ROADMAP
-          </h2>
+          <h2 className="text-4xl md:text-6xl font-bold text-center mb-24 leading-tight bg-gradient-to-r from-yellow-300 to-yellow-500 bg-clip-text text-transparent">
+  ECOSYSTEM ROADMAP
+</h2>
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
